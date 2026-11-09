@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TL Studio</title>
+<meta name="description" content="Independent mobile games from Denmark.">
+<link rel="icon" href="img/favicon.png">
+<style>
+  :root {
+    --bg: #0d1611; --bg2: #13221a; --card: #16241c; --line: #24382c;
+    --text: #eef3ef; --muted: #9fb3a5; --accent: #c6f05a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+
+  header { background: linear-gradient(160deg, #183022 0%, var(--bg) 70%); border-bottom: 1px solid var(--line); }
+  header .wrap { padding-top: 56px; padding-bottom: 44px; }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.1; margin: 0; letter-spacing: -0.5px; }
+  .bar { width: 56px; height: 4px; background: var(--accent); border-radius: 2px; margin: 16px 0 14px; }
+  .tag { font-size: clamp(18px, 3vw, 21px); color: #cfdad2; margin: 0; }
+
+  section { padding: 44px 0 8px; }
+  h2 { font-size: 24px; margin: 0 0 16px; }
+
+  .games { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 16px; }
+  .game { display: flex; gap: 18px; align-items: flex-start; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+  .game img { width: 84px; height: 84px; border-radius: 20px; flex: none; }
+  .game > div { min-width: 0; }
+  .game h3 { margin: 0 0 4px; font-size: 21px; }
+  .game p { margin: 0 0 10px; color: #cfdad2; }
+  .soon { display: inline-block; font-size: 14px; font-weight: 700; color: var(--accent); border: 1.5px solid var(--accent); border-radius: 999px; padding: 2px 10px; margin-bottom: 10px; }
+  .links a { margin-right: 16px; font-size: 15px; white-space: nowrap; }
+
+  footer { margin-top: 64px; border-top: 1px solid var(--line); background: var(--bg2); }
+  footer .wrap { padding-top: 26px; padding-bottom: 40px; color: var(--muted); font-size: 15px; }
+  footer p { margin: 0 0 6px; }
+
+  @media (max-width: 360px) {
+    .game { flex-direction: column; }
+  }
+  @media (max-width: 420px) {
+    .game img { width: 64px; height: 64px; border-radius: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>TL Studio</h1>
+    <div class="bar"></div>
+    <p class="tag">Independent mobile games from Denmark.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Games</h2>
+    <div class="games">
+      <div class="game">
+        <img src="groundupfc/img/icon.png" alt="Ground Up FC icon">
+        <div>
+          <h3>Ground Up FC</h3>
+          <p>Be the chairman. Build the stadium, sign the players and climb the leagues.</p>
+          <span class="soon">Coming soon to Google Play</span>
+          <div class="links"><a href="groundupfc/">About the game</a><a href="groundupfc/privacy.html">Privacy policy</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>TL Studio, CVR 46893670, Denmark.</p>
+    <p>Contact: <a href="mailto:tlstudiodev@gmail.com">tlstudiodev@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ground Up FC</title>
+<meta name="description" content="Be the chairman. Build the stadium, sign the players and climb the leagues. A football club game for Android.">
+<meta property="og:title" content="Ground Up FC">
+<meta property="og:description" content="Be the chairman. Build the stadium, sign the players and climb the leagues.">
+<meta property="og:image" content="img/feature.jpg">
+<link rel="icon" href="img/favicon.png">
+<style>
+  :root {
+    --bg: #0d1611; --bg2: #13221a; --card: #16241c; --line: #24382c;
+    --text: #eef3ef; --muted: #9fb3a5; --accent: #c6f05a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+
+  header { background: linear-gradient(160deg, #183022 0%, var(--bg) 70%); border-bottom: 1px solid var(--line); }
+  .hero { display: flex; gap: 28px; align-items: center; padding-top: 56px; padding-bottom: 48px; }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; flex: none; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+  h1 { font-size: clamp(36px, 7vw, 58px); line-height: 1.05; margin: 0; letter-spacing: -0.5px; }
+  .bar { width: 56px; height: 4px; background: var(--accent); border-radius: 2px; margin: 16px 0 14px; }
+  .tag { font-size: clamp(18px, 3vw, 22px); color: #cfdad2; margin: 0 0 22px; }
+  .pill { display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--accent); color: #10200f; font-weight: 700; text-decoration: none; }
+  .pill.soon { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+
+  section { padding: 44px 0 8px; }
+  h2 { font-size: 24px; margin: 0 0 14px; }
+  .lead { color: #cfdad2; max-width: 680px; margin: 0; }
+
+  .shots { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 70px) / 6); gap: 14px; overflow-x: auto; padding: 18px 0 10px; scroll-snap-type: x mandatory; }
+  .shots img { width: 100%; border-radius: 16px; border: 1px solid var(--line); scroll-snap-align: start; display: block; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 8px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; color: var(--accent); }
+  .card p { margin: 0; color: #cfdad2; }
+
+  footer { margin-top: 56px; border-top: 1px solid var(--line); background: var(--bg2); }
+  footer .wrap { padding-top: 26px; padding-bottom: 40px; color: var(--muted); font-size: 15px; }
+  footer p { margin: 0 0 6px; }
+  footer nav a { margin-right: 18px; }
+
+  @media (max-width: 760px) {
+    .shots { grid-auto-columns: 40%; }
+  }
+  @media (max-width: 560px) {
+    .hero { flex-direction: column; align-items: flex-start; gap: 18px; padding-top: 40px; padding-bottom: 36px; }
+    .hero img { width: 88px; height: 88px; border-radius: 20px; }
+    .shots { grid-auto-columns: 62%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <img src="img/icon.png" alt="Ground Up FC icon">
+    <div>
+      <h1>Ground Up FC</h1>
+      <div class="bar"></div>
+      <p class="tag">You are not the manager. You are the chairman.</p>
+      <span class="pill soon">Coming soon to Google Play</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Build your club from the ground up</h2>
+    <p class="lead">Take over any club in a seven-league football pyramid, or start your own in non-league with your own name, colours and crest. Sign the players, hire the coach, build the stadium and keep the board and the fans on your side.</p>
+    <div class="shots">
+      <img src="img/shot1.jpg" alt="The stadium" loading="lazy" width="540" height="960">
+      <img src="img/shot2.jpg" alt="Match day" loading="lazy" width="540" height="960">
+      <img src="img/shot3.jpg" alt="Signing a player" loading="lazy" width="540" height="960">
+      <img src="img/shot4.jpg" alt="The league table" loading="lazy" width="540" height="960">
+      <img src="img/shot5.jpg" alt="The youth academy" loading="lazy" width="540" height="960">
+      <img src="img/shot6.jpg" alt="Deadline day" loading="lazy" width="540" height="960">
+    </div>
+  </section>
+
+  <section>
+    <h2>What you do</h2>
+    <div class="grid">
+      <div class="card"><h3>Transfers</h3><p>Agree the fee with the club, then the wages and the contract. Sell when the price is right.</p></div>
+      <div class="card"><h3>The coach</h3><p>Hire the head coach, and fire him when it goes wrong.</p></div>
+      <div class="card"><h3>The stadium</h3><p>Build it stand by stand: roof, floodlights, kiosks, fan shop, VIP lounge and a big screen.</p></div>
+      <div class="card"><h3>Money</h3><p>Set ticket prices, sell season tickets and sign sponsors. Spend more than you earn and the bank says no.</p></div>
+      <div class="card"><h3>The academy</h3><p>Bring through your own teenagers and give the best of them a chance.</p></div>
+      <div class="card"><h3>Match day</h3><p>Watch the match live, jump to the result, or simulate to the end of the season.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Good to know</h2>
+    <p class="lead">More than 160 clubs, cups, play-offs and two European competitions. Eight languages. Plays offline. Free to play with optional purchases and a short ad break twice a season.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Ground Up FC is made by <a href="../">TL Studio</a>, CVR 46893670, Denmark.</p>
+    <p>Contact: <a href="mailto:tlstudiodev@gmail.com">tlstudiodev@gmail.com</a></p>
+    <nav><a href="privacy.html">Privacy policy</a><a href="../">More games</a></nav>
+  </div>
+</footer>
+
+</body>
+</html>
